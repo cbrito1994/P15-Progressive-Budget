@@ -2,10 +2,13 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 
 const config = {
-    entry: './public/index.js',
+    entry: {
+      index: './public/index.js',
+      db: './public/indexeddb.js'
+    },
     output: {
-      path: __dirname + '/dist',
-      filename: 'bundle.js',
+      path: __dirname + '/public/dist',
+      filename: '[name].bundle.js',
     },
     mode: 'production',
     module: {
@@ -37,7 +40,7 @@ const config = {
         icons: [
           {
             src: path.resolve(__dirname, 'public/icons/icon-512x512.png'),
-            sizes: [96, 128, 192, 256, 384, 512],
+            sizes: [72, 96, 128, 144, 152, 192, 384, 512],
           },
         ],
       }),

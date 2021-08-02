@@ -4,7 +4,8 @@ const DATA_CACHE_NAME = "budget-data-cache-v1"
 const FILES_TO_CACHE = [
   '/',
   '/index.html',
-  '/dist/bundle.js',
+  '/dist/index.bundle.js',
+  '/dist/db.bundle.js',
   '/dist/manifest.json',
   '/dist/icon_72x72.png',
   '/dist/icon_96x96.png',
@@ -12,6 +13,7 @@ const FILES_TO_CACHE = [
   '/dist/icon_144x144.png',
   '/dist/icon_152x152.png',
   '/dist/icon_192x192.png',
+  '/dist/icon_256x256.png',
   '/dist/icon_384x384.png',
   '/dist/icon_512x512.png',
 ];
