@@ -11,20 +11,6 @@ const config = {
       filename: '[name].bundle.js',
     },
     mode: 'production',
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env'],
-            },
-          },
-        },
-      ],
-    },
     plugins: [
       new WebpackPwaManifest({
         filename: "manifest.json",
@@ -40,7 +26,7 @@ const config = {
         icons: [
           {
             src: path.resolve(__dirname, 'public/icons/icon-512x512.png'),
-            sizes: [72, 96, 128, 144, 152, 192, 384, 512],
+            sizes: [72, 96, 128, 144, 152, 192, 256, 384, 512],
           },
         ],
       }),
