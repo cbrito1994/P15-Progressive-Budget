@@ -26,7 +26,7 @@ const config = {
         icons: [
           {
             src: path.resolve(__dirname, 'public/icons/icon-512x512.png'),
-            sizes: [72, 96, 128, 144, 152, 192, 256, 384, 512],
+            sizes: [72, 96, 128, 152, 192, 256, 384, 512],
             destination: '/',
           },
         ],

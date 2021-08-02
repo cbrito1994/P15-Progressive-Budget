@@ -10,7 +10,6 @@ const FILES_TO_CACHE = [
   '/dist/icon_72x72.png',
   '/dist/icon_96x96.png',
   '/dist/icon_128x128.png',
-  '/dist/icon_144x144.png',
   '/dist/icon_152x152.png',
   '/dist/icon_192x192.png',
   '/dist/icon_256x256.png',
